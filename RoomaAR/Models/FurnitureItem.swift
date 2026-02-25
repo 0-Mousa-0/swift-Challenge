@@ -19,7 +19,6 @@ struct FurnitureItem: Identifiable, Hashable {
 }
 
 extension FurnitureItem {
-    /// Curated lightweight set aimed for consistent real-time AR performance.
     static let defaultItems: [FurnitureItem] = [
         FurnitureItem(
             name: "Sofa",

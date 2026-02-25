@@ -1,57 +1,62 @@
-# RoomaAR - Swift Student Challenge Playground
+# RoomaAR - Swift/Xcode iOS App
 
-RoomaAR is an AR furniture placement experience designed for Swift Student Challenge style evaluation.
-The project is now structured as a **Playground with Swift source files** (`RoomaAR.playground`), not as a `.swiftpm` package folder.
+RoomaAR is now structured as a **standard Xcode SwiftUI iOS app** (not playground, not `.swiftpm` package app).
 
 ## Project Structure
 
 ```text
-RoomaAR.playground
-├── Contents.swift
-├── contents.xcplayground
-├── timeline.xctimeline
+RoomaAR.xcodeproj
+RoomaAR
+├── App
+│   └── RoomaARApp.swift
+├── AR
+│   ├── ARSessionManager.swift
+│   └── ARViewContainer.swift
+├── Assets.xcassets
+├── Models
+│   └── FurnitureItem.swift
 ├── Resources
 │   └── README_Models.txt
-└── Sources
-    ├── AR
-    │   ├── ARSessionManager.swift
-    │   └── ARViewContainer.swift
-    ├── Models
-    │   └── FurnitureItem.swift
-    ├── UI
-    │   ├── ContentView.swift
-    │   ├── FurniturePickerView.swift
-    │   └── IntroView.swift
-    └── Utilities
-        └── AppState.swift
+├── Utilities
+│   └── AppState.swift
+└── Views
+    ├── ContentView.swift
+    ├── FurniturePickerView.swift
+    ├── IntroView.swift
+    └── SimulatorRoomView.swift
 ```
 
-## Build / Run
+## Run in Xcode Simulator
 
-1. Open `RoomaAR.playground` in Xcode (or Swift Playgrounds on iPad).
-2. Run the playground on a **real iPad** (ARKit is not supported in iOS Simulator for this experience).
-3. Grant camera permission when prompted.
-4. Move the iPad slowly to scan surfaces, select furniture, then tap to place.
+1. Open `RoomaAR.xcodeproj` in Xcode.
+2. Select an iOS Simulator device.
+3. Build and Run.
+4. App will use **Simulator Mode** (tap on the screen to place furniture cards).
 
-## Swift Student Challenge Alignment Checklist
+## Run on Real Device (AR mode)
 
-- Experience can be understood quickly (target: within ~3 minutes).
-- Uses only local resources (no network dependency).
-- Includes clear English UI guidance for reviewers.
-- Keeps 3D assets optimized for smooth real-time AR performance.
-- Designed to keep final submission package lightweight.
+1. Select a real iPhone/iPad.
+2. Build and Run.
+3. Grant camera permission.
+4. Move device to detect surfaces and place furniture in AR.
 
 ## Performance Notes
 
-- Preloads and caches models to reduce placement latency.
-- Uses AR coaching overlay to stabilize plane detection.
-- Trims placed anchors if the scene becomes too heavy.
-- Uses procedural fallback geometry if USDZ assets are missing, so the app remains usable during development.
+- Model preloading/caching for smoother placement on device.
+- AR coaching overlay for stable plane detection.
+- Anchor trimming to keep scene responsive.
+- Simulator fallback mode for fast UI + interaction testing.
+- Procedural fallback entities if USDZ assets are missing.
 
 ## Asset Setup
 
-Drop your `sofa.usdz`, `table.usdz`, `chair.usdz`, `curtain.usdz`, and `carpet.usdz` files into:
+Drop your models into:
 
-`RoomaAR.playground/Resources/`
+`RoomaAR/Resources/`
 
-For best performance, keep polygon counts and texture sizes low.
+Expected names:
+- `sofa.usdz`
+- `table.usdz`
+- `chair.usdz`
+- `curtain.usdz`
+- `carpet.usdz`

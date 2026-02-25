@@ -3,7 +3,6 @@ import SwiftUI
 /// Bottom horizontal picker for furniture categories.
 struct FurniturePickerView: View {
     @EnvironmentObject private var appState: AppState
-
     private let items = FurnitureItem.defaultItems
 
     var body: some View {
@@ -16,7 +15,11 @@ struct FurniturePickerView: View {
                     )
                     .onTapGesture {
                         appState.selectedFurniture = item
+#if targetEnvironment(simulator)
+                        appState.statusMessage = "Simulator mode: tap anywhere to place \(item.name)."
+#else
                         appState.statusMessage = "Selected \(item.name). Tap a detected surface to place it."
+#endif
                     }
                 }
             }
