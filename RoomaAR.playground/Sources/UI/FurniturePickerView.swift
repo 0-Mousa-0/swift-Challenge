@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Horizontal picker shown on top of the AR view to choose furniture models.
+/// Bottom horizontal picker for furniture categories.
 struct FurniturePickerView: View {
     @EnvironmentObject private var appState: AppState
 
@@ -10,26 +10,25 @@ struct FurniturePickerView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 12) {
                 ForEach(items) { item in
-                    FurniturePickerButton(
+                    PickerChip(
                         item: item,
                         isSelected: item == appState.selectedFurniture
                     )
                     .onTapGesture {
                         appState.selectedFurniture = item
-                        appState.statusMessage = "Tap on a detected surface to place the \(item.name.lowercased())."
+                        appState.statusMessage = "Selected \(item.name). Tap a detected surface to place it."
                     }
                 }
             }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
         }
         .background(.ultraThinMaterial)
         .clipShape(Capsule())
     }
 }
 
-/// Individual pill-shaped button in the picker.
-private struct FurniturePickerButton: View {
+private struct PickerChip: View {
     let item: FurnitureItem
     let isSelected: Bool
 
@@ -38,23 +37,11 @@ private struct FurniturePickerButton: View {
             .font(.subheadline.bold())
             .foregroundColor(isSelected ? .white : .primary)
             .padding(.horizontal, 16)
-            .padding(.vertical, 8)
+            .padding(.vertical, 10)
             .background(
-                RoundedRectangle(cornerRadius: 20, style: .continuous)
-                    .fill(isSelected ? Color.blue : Color(.systemBackground))
-                    .shadow(color: Color.black.opacity(0.15), radius: 4, x: 0, y: 2)
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    .fill(isSelected ? Color.blue.opacity(0.92) : Color(.systemBackground).opacity(0.95))
+                    .shadow(color: Color.black.opacity(isSelected ? 0.22 : 0.12), radius: 4, x: 0, y: 2)
             )
     }
 }
-
-struct FurniturePickerView_Previews: PreviewProvider {
-    static var previews: some View {
-        ZStack {
-            Color.gray.opacity(0.4).ignoresSafeArea()
-            FurniturePickerView()
-                .environmentObject(AppState())
-                .padding()
-        }
-    }
-}
-
