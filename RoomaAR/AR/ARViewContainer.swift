@@ -51,8 +51,8 @@ struct ARViewContainer: UIViewRepresentable {
         }
 
         if let selected = appState.selectedFurniture,
-           context.coordinator.lastPreloadedModelName != selected.modelFileName {
-            context.coordinator.lastPreloadedModelName = selected.modelFileName
+           context.coordinator.lastPreloadedModelName != selected.cacheKey {
+            context.coordinator.lastPreloadedModelName = selected.cacheKey
             context.coordinator.sessionManager?.preloadModel(for: selected)
         }
     }

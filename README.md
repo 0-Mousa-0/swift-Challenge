@@ -16,6 +16,8 @@ RoomaAR
 ├── Models
 │   └── FurnitureItem.swift
 ├── Resources
+│   ├── CGTraderFurnitureManifest.json
+│   ├── Models
 │   └── README_Models.txt
 ├── Utilities
 │   └── AppState.swift
@@ -24,6 +26,8 @@ RoomaAR
     ├── FurniturePickerView.swift
     ├── IntroView.swift
     └── SimulatorRoomView.swift
+Scripts
+└── generate_cgtrader_manifest.py
 ```
 
 ## Run in Xcode Simulator
@@ -50,9 +54,13 @@ RoomaAR
 
 ## Asset Setup
 
-Drop your models into:
+CGTrader source manifest:
 
-`RoomaAR/Resources/`
+`RoomaAR/Resources/CGTraderFurnitureManifest.json`
+
+Model destination folder:
+
+`RoomaAR/Resources/Models/`
 
 Expected names:
 - `sofa.usdz`
@@ -60,3 +68,16 @@ Expected names:
 - `chair.usdz`
 - `curtain.usdz`
 - `carpet.usdz`
+
+### CGTrader Notes
+
+- The app now maps furniture slots to concrete CGTrader model pages and download pages.
+- CGTrader binary downloads require account authentication in browser.
+- After download, convert non-USDZ files to USDZ and rename to the expected names above.
+- Missing models are handled by procedural fallback geometry.
+
+### Refreshing the CGTrader manifest
+
+Run:
+
+`python3 Scripts/generate_cgtrader_manifest.py`

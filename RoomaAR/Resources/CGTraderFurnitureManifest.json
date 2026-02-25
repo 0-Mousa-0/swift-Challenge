@@ -1,0 +1,349 @@
+{
+  "generatedAtUTC": "2026-02-25T23:04:13.823751+00:00",
+  "source": "https://www.cgtrader.com/free-3d-models",
+  "notes": [
+    "CGTrader free-download file endpoints require signed-in authentication.",
+    "Use the listed download-page URLs in a browser session, then rename files to targetFileName.",
+    "Place renamed files under RoomaAR/Resources/Models."
+  ],
+  "items": [
+    {
+      "slot": "sofa",
+      "targetFileName": "sofa.usdz",
+      "title": "Loveseats Sofa  for Augmented Reality  Glb and Usdz  Free low-poly 3D model",
+      "cgtraderPageURL": "https://www.cgtrader.com/free-3d-models/furniture/sofa/loveseats-sofa",
+      "cgtraderDownloadPageURL": "https://www.cgtrader.com/items/3660386/download-page",
+      "productId": 3660386,
+      "license": "royalty_free_no_ai",
+      "isFree": true,
+      "reportedFormats": [
+        "OBJ",
+        "MAX",
+        "FBX",
+        "SKP",
+        "DWG",
+        "USDZ",
+        "GLTF"
+      ],
+      "previewImageURL": "https://img-new.cgtrader.com/items/3660386/c35cef67e1/large/loveseats-sofa-for-augmented-reality-glb-and-usdz-3d-model-c35cef67e1.webp",
+      "freeDownloadFiles": [
+        {
+          "fileId": 10047132,
+          "itemId": 3660386,
+          "fileSize": "21.8 MB",
+          "relativePath": "/items/3660386/free-downloads/10047132",
+          "absoluteURL": "https://www.cgtrader.com/items/3660386/free-downloads/10047132"
+        },
+        {
+          "fileId": 10656638,
+          "itemId": 3660386,
+          "fileSize": "6.12 MB",
+          "relativePath": "/items/3660386/free-downloads/10656638",
+          "absoluteURL": "https://www.cgtrader.com/items/3660386/free-downloads/10656638"
+        },
+        {
+          "fileId": 10656639,
+          "itemId": 3660386,
+          "fileSize": "6.75 MB",
+          "relativePath": "/items/3660386/free-downloads/10656639",
+          "absoluteURL": "https://www.cgtrader.com/items/3660386/free-downloads/10656639"
+        },
+        {
+          "fileId": 10656640,
+          "itemId": 3660386,
+          "fileSize": "23 MB",
+          "relativePath": "/items/3660386/free-downloads/10656640",
+          "absoluteURL": "https://www.cgtrader.com/items/3660386/free-downloads/10656640"
+        },
+        {
+          "fileId": 10656641,
+          "itemId": 3660386,
+          "fileSize": "8.18 MB",
+          "relativePath": "/items/3660386/free-downloads/10656641",
+          "absoluteURL": "https://www.cgtrader.com/items/3660386/free-downloads/10656641"
+        },
+        {
+          "fileId": 10656782,
+          "itemId": 3660386,
+          "fileSize": "14.9 MB",
+          "relativePath": "/items/3660386/free-downloads/10656782",
+          "absoluteURL": "https://www.cgtrader.com/items/3660386/free-downloads/10656782"
+        },
+        {
+          "fileId": 10656783,
+          "itemId": 3660386,
+          "fileSize": "23.8 MB",
+          "relativePath": "/items/3660386/free-downloads/10656783",
+          "absoluteURL": "https://www.cgtrader.com/items/3660386/free-downloads/10656783"
+        }
+      ]
+    },
+    {
+      "slot": "table",
+      "targetFileName": "table.usdz",
+      "title": "CC0 - Table Free low-poly 3D model",
+      "cgtraderPageURL": "https://www.cgtrader.com/free-3d-models/furniture/table/cc0-table",
+      "cgtraderDownloadPageURL": "https://www.cgtrader.com/items/3531094/download-page",
+      "productId": 3531094,
+      "license": "royalty_free_no_ai",
+      "isFree": true,
+      "reportedFormats": [
+        "OBJ",
+        "USDZ",
+        "GLTF",
+        "3DS",
+        "DAE",
+        "FBX"
+      ],
+      "previewImageURL": "https://img-new.cgtrader.com/items/3531094/0b27b80830/large/cc0-table-3d-model-0b27b80830.webp",
+      "freeDownloadFiles": [
+        {
+          "fileId": 9586743,
+          "itemId": 3531094,
+          "fileSize": "68.7 MB",
+          "relativePath": "/items/3531094/free-downloads/9586743",
+          "absoluteURL": "https://www.cgtrader.com/items/3531094/free-downloads/9586743"
+        }
+      ]
+    },
+    {
+      "slot": "chair",
+      "targetFileName": "chair.usdz",
+      "title": "Wooden chair with curve handle  Free low-poly 3D model",
+      "cgtraderPageURL": "https://www.cgtrader.com/free-3d-models/furniture/chair/wooden-chair-with-curve-handle-golden-legs",
+      "cgtraderDownloadPageURL": "https://www.cgtrader.com/items/5354494/download-page",
+      "productId": 5354494,
+      "license": "royalty_free_no_ai",
+      "isFree": true,
+      "reportedFormats": [
+        "OBJ",
+        "OTHER",
+        "PNG",
+        "JPG",
+        "FBX",
+        "BLEND",
+        "GLTF"
+      ],
+      "previewImageURL": "https://img-new.cgtrader.com/items/5354494/33c09bc76e/large/wooden-chair-with-curve-handle-3d-model-33c09bc76e.webp",
+      "freeDownloadFiles": [
+        {
+          "fileId": 15937574,
+          "itemId": 5354494,
+          "fileSize": "5.54 MB",
+          "relativePath": "/items/5354494/free-downloads/15937574",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/15937574"
+        },
+        {
+          "fileId": 15937575,
+          "itemId": 5354494,
+          "fileSize": "15.2 MB",
+          "relativePath": "/items/5354494/free-downloads/15937575",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/15937575"
+        },
+        {
+          "fileId": 15937576,
+          "itemId": 5354494,
+          "fileSize": "1.83 MB",
+          "relativePath": "/items/5354494/free-downloads/15937576",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/15937576"
+        },
+        {
+          "fileId": 15937577,
+          "itemId": 5354494,
+          "fileSize": "2.96 MB",
+          "relativePath": "/items/5354494/free-downloads/15937577",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/15937577"
+        },
+        {
+          "fileId": 15937578,
+          "itemId": 5354494,
+          "fileSize": "7.1 MB",
+          "relativePath": "/items/5354494/free-downloads/15937578",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/15937578"
+        },
+        {
+          "fileId": 15937579,
+          "itemId": 5354494,
+          "fileSize": "6.09 MB",
+          "relativePath": "/items/5354494/free-downloads/15937579",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/15937579"
+        },
+        {
+          "fileId": 15937580,
+          "itemId": 5354494,
+          "fileSize": "5.44 MB",
+          "relativePath": "/items/5354494/free-downloads/15937580",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/15937580"
+        },
+        {
+          "fileId": 15937581,
+          "itemId": 5354494,
+          "fileSize": "1.02 KB",
+          "relativePath": "/items/5354494/free-downloads/15937581",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/15937581"
+        },
+        {
+          "fileId": 15937582,
+          "itemId": 5354494,
+          "fileSize": "30 MB",
+          "relativePath": "/items/5354494/free-downloads/15937582",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/15937582"
+        },
+        {
+          "fileId": 17246105,
+          "itemId": 5354494,
+          "fileSize": "13.4 MB",
+          "relativePath": "/items/5354494/free-downloads/17246105",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/17246105"
+        },
+        {
+          "fileId": 17246106,
+          "itemId": 5354494,
+          "fileSize": "17.4 MB",
+          "relativePath": "/items/5354494/free-downloads/17246106",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/17246106"
+        },
+        {
+          "fileId": 17246107,
+          "itemId": 5354494,
+          "fileSize": "6.01 MB",
+          "relativePath": "/items/5354494/free-downloads/17246107",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/17246107"
+        },
+        {
+          "fileId": 17246108,
+          "itemId": 5354494,
+          "fileSize": "352 Bytes",
+          "relativePath": "/items/5354494/free-downloads/17246108",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/17246108"
+        },
+        {
+          "fileId": 17246109,
+          "itemId": 5354494,
+          "fileSize": "14.4 MB",
+          "relativePath": "/items/5354494/free-downloads/17246109",
+          "absoluteURL": "https://www.cgtrader.com/items/5354494/free-downloads/17246109"
+        }
+      ]
+    },
+    {
+      "slot": "curtain",
+      "targetFileName": "curtain.usdz",
+      "title": "Simple curtain Free 3D model",
+      "cgtraderPageURL": "https://www.cgtrader.com/free-3d-models/furniture/other/simple-curtain-657b8a8d-b07b-4380-ab86-731fd2861e09",
+      "cgtraderDownloadPageURL": "https://www.cgtrader.com/items/4159526/download-page",
+      "productId": 4159526,
+      "license": "royalty_free_no_ai",
+      "isFree": true,
+      "reportedFormats": [
+        "BLEND"
+      ],
+      "previewImageURL": "https://img-new.cgtrader.com/items/4159526/7c5b164909/large/simple-curtain-3d-model-7c5b164909.webp",
+      "freeDownloadFiles": [
+        {
+          "fileId": 11830785,
+          "itemId": 4159526,
+          "fileSize": "1.24 MB",
+          "relativePath": "/items/4159526/free-downloads/11830785",
+          "absoluteURL": "https://www.cgtrader.com/items/4159526/free-downloads/11830785"
+        }
+      ]
+    },
+    {
+      "slot": "carpet",
+      "targetFileName": "carpet.usdz",
+      "title": "Carpets rug on table Free 3D model",
+      "cgtraderPageURL": "https://www.cgtrader.com/free-3d-models/household/other/carpets-43a69c8a-7235-4c6d-aa4c-68789464cdd6",
+      "cgtraderDownloadPageURL": "https://www.cgtrader.com/items/1927737/download-page",
+      "productId": 1927737,
+      "license": "royalty_free_no_ai",
+      "isFree": true,
+      "reportedFormats": [
+        "MA",
+        "OBJ",
+        "FBX",
+        "STL"
+      ],
+      "previewImageURL": "https://img-new.cgtrader.com/items/1927737/b10ecf7638/large/carpets-rug-on-table-3d-model-b10ecf7638.webp",
+      "freeDownloadFiles": [
+        {
+          "fileId": 3703600,
+          "itemId": 1927737,
+          "fileSize": "2.67 MB",
+          "relativePath": "/items/1927737/free-downloads/3703600",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703600"
+        },
+        {
+          "fileId": 3703601,
+          "itemId": 1927737,
+          "fileSize": "4.9 MB",
+          "relativePath": "/items/1927737/free-downloads/3703601",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703601"
+        },
+        {
+          "fileId": 3703602,
+          "itemId": 1927737,
+          "fileSize": "29.5 KB",
+          "relativePath": "/items/1927737/free-downloads/3703602",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703602"
+        },
+        {
+          "fileId": 3703603,
+          "itemId": 1927737,
+          "fileSize": "19.2 MB",
+          "relativePath": "/items/1927737/free-downloads/3703603",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703603"
+        },
+        {
+          "fileId": 3703604,
+          "itemId": 1927737,
+          "fileSize": "123 KB",
+          "relativePath": "/items/1927737/free-downloads/3703604",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703604"
+        },
+        {
+          "fileId": 3703605,
+          "itemId": 1927737,
+          "fileSize": "5.04 MB",
+          "relativePath": "/items/1927737/free-downloads/3703605",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703605"
+        },
+        {
+          "fileId": 3703606,
+          "itemId": 1927737,
+          "fileSize": "84 Bytes",
+          "relativePath": "/items/1927737/free-downloads/3703606",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703606"
+        },
+        {
+          "fileId": 3703607,
+          "itemId": 1927737,
+          "fileSize": "84 Bytes",
+          "relativePath": "/items/1927737/free-downloads/3703607",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703607"
+        },
+        {
+          "fileId": 3703612,
+          "itemId": 1927737,
+          "fileSize": "29.5 MB",
+          "relativePath": "/items/1927737/free-downloads/3703612",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703612"
+        },
+        {
+          "fileId": 3703613,
+          "itemId": 1927737,
+          "fileSize": "56.3 MB",
+          "relativePath": "/items/1927737/free-downloads/3703613",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703613"
+        },
+        {
+          "fileId": 3703614,
+          "itemId": 1927737,
+          "fileSize": "35.8 MB",
+          "relativePath": "/items/1927737/free-downloads/3703614",
+          "absoluteURL": "https://www.cgtrader.com/items/1927737/free-downloads/3703614"
+        }
+      ]
+    }
+  ]
+}

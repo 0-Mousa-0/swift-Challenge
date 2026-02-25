@@ -1,17 +1,28 @@
-RoomaAR 3D Asset Guide
-======================
+RoomaAR CGTrader Furniture Guide
+================================
 
-Add these USDZ files to this Resources directory:
+This project is wired to use furniture sources from:
+https://www.cgtrader.com/free-3d-models
+
+Place runtime assets in:
+RoomaAR/Resources/Models/
+
+Required runtime names:
 - sofa.usdz
 - table.usdz
 - chair.usdz
 - curtain.usdz
 - carpet.usdz
 
-Performance targets:
-1) Keep app size lightweight.
-2) Prefer optimized meshes and compressed textures.
-3) Keep materials simple for stable frame rate.
-4) Include all assets locally (offline-ready).
+How to import from CGTrader:
+1) Open RoomaAR/Resources/CGTraderFurnitureManifest.json
+2) Use each item's "cgtraderDownloadPageURL" in your browser.
+3) Sign in to CGTrader and download the free files for that item.
+4) Convert to USDZ if needed (Reality Converter works well for OBJ/FBX/GLTF).
+5) Rename output files to the required runtime names above.
+6) Put the renamed files into RoomaAR/Resources/Models/
 
-If a USDZ file is missing, RoomaAR falls back to procedural geometry.
+Notes:
+- CGTrader free-download endpoints require signed-in authentication.
+- If a model is missing, RoomaAR automatically falls back to procedural geometry.
+- Keep assets lightweight for stable AR frame rate.

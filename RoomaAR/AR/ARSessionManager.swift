@@ -9,6 +9,7 @@ final class ARSessionManager: NSObject {
     let arView: ARView
     private let appState: AppState
 
+    /// Cached prototype entities keyed by furniture identity.
     private var modelCache: [String: ModelEntity] = [:]
     private let cacheLock = NSLock()
 
@@ -102,14 +103,14 @@ final class ARSessionManager: NSObject {
 
     private func loadModelPrototype(for item: FurnitureItem) -> ModelEntity {
         cacheLock.lock()
-        if let cached = modelCache[item.modelFileName] {
+        if let cached = modelCache[item.cacheKey] {
             cacheLock.unlock()
             return cached
         }
         cacheLock.unlock()
 
         let prototype: ModelEntity
-        if let loadedModel = try? ModelEntity.loadModel(named: item.modelFileName) {
+        if let loadedModel = loadFirstAvailableModel(from: item.modelResourceCandidates) {
             prototype = loadedModel
         } else {
             prototype = makeFallbackEntity(for: item)
@@ -118,9 +119,18 @@ final class ARSessionManager: NSObject {
         prototype.generateCollisionShapes(recursive: true)
 
         cacheLock.lock()
-        modelCache[item.modelFileName] = prototype
+        modelCache[item.cacheKey] = prototype
         cacheLock.unlock()
         return prototype
+    }
+
+    private func loadFirstAvailableModel(from candidates: [String]) -> ModelEntity? {
+        for name in candidates {
+            if let model = try? ModelEntity.loadModel(named: name) {
+                return model
+            }
+        }
+        return nil
     }
 
     private func makeFallbackEntity(for item: FurnitureItem) -> ModelEntity {
