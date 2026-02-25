@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Root view that toggles between onboarding and AR mode.
+/// Root view that toggles between onboarding and experience modes.
 struct ContentView: View {
     @EnvironmentObject private var appState: AppState
 
@@ -9,15 +9,18 @@ struct ContentView: View {
             if appState.showIntro {
                 IntroView()
             } else {
-                arExperience
+                experienceView
             }
         }
     }
 
-    private var arExperience: some View {
+    private var experienceView: some View {
         ZStack(alignment: .top) {
+#if targetEnvironment(simulator)
+            SimulatorRoomView()
+#else
             ARViewContainer()
-                .ignoresSafeArea()
+#endif
 
             VStack(spacing: 14) {
                 topBar

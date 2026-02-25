@@ -1,3 +1,4 @@
+#if !targetEnvironment(simulator)
 import Foundation
 import ARKit
 import RealityKit
@@ -45,7 +46,7 @@ final class ARSessionManager: NSObject {
         placedAnchors.removeAll()
         configureSession()
         DispatchQueue.main.async { [weak self] in
-            self?.appState.statusMessage = "Scene reset. Move your iPad slowly to scan surfaces."
+            self?.appState.statusMessage = "Scene reset. Move your device slowly to scan surfaces."
             self?.appState.placementsCount = 0
         }
     }
@@ -60,7 +61,7 @@ final class ARSessionManager: NSObject {
         let estimated = arView.raycast(from: location, allowing: .estimatedPlane, alignment: .horizontal)
 
         guard let raycastResult = precise.first ?? estimated.first else {
-            appState.statusMessage = "No surface found yet. Move your iPad slowly and try again."
+            appState.statusMessage = "No surface found yet. Move the device and try again."
             return
         }
 
@@ -137,8 +138,7 @@ final class ARSessionManager: NSObject {
             mesh = .generatePlane(width: 0.45, depth: 0.45)
         }
 
-        let entity = ModelEntity(mesh: mesh, materials: [material])
-        return entity
+        return ModelEntity(mesh: mesh, materials: [material])
     }
 }
 
@@ -158,7 +158,7 @@ extension ARSessionManager: ARSessionDelegate {
             case .relocalizing:
                 trackingMessage = "Relocalizing. Point the camera to where you started."
             case .excessiveMotion:
-                trackingMessage = "Move the iPad more slowly for stable tracking."
+                trackingMessage = "Move the device more slowly for stable tracking."
             case .insufficientFeatures:
                 trackingMessage = "Need more details in view. Scan textured areas."
             @unknown default:
@@ -180,3 +180,4 @@ extension ARSessionManager: ARSessionDelegate {
         }
     }
 }
+#endif

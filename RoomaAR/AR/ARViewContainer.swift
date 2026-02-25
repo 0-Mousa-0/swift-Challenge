@@ -1,3 +1,4 @@
+#if !targetEnvironment(simulator)
 import SwiftUI
 import RealityKit
 import ARKit
@@ -68,3 +69,4 @@ struct ARViewContainer: UIViewRepresentable {
         }
     }
 }
+#endif

@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Onboarding screen introducing the AR furniture workflow.
+/// Onboarding screen introducing RoomaAR.
 struct IntroView: View {
     @EnvironmentObject private var appState: AppState
 
@@ -20,19 +20,19 @@ struct IntroView: View {
                     .font(.system(size: 46, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
 
-                Text("Visualize furniture in your real room with smooth, responsive AR placement.")
+                Text("Visualize furniture with a fast AR workflow on device and a simulator-friendly fallback.")
                     .multilineTextAlignment(.center)
                     .font(.headline)
                     .foregroundColor(.white.opacity(0.94))
                     .padding(.horizontal, 28)
 
                 VStack(alignment: .leading, spacing: 10) {
-                    introBullet("Scan the floor or table by moving the iPad slowly.")
-                    introBullet("Pick furniture from the bottom carousel.")
-                    introBullet("Tap to place, then drag/rotate/scale using gestures.")
+                    introBullet("Scan with camera on real device for AR mode.")
+                    introBullet("Use simulator mode to test UI and placement flow.")
+                    introBullet("Pick furniture, tap to place, and reset anytime.")
                 }
                 .padding(18)
-                .frame(maxWidth: 520)
+                .frame(maxWidth: 540)
                 .background(.ultraThinMaterial)
                 .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
                 .padding(.horizontal, 24)
@@ -44,7 +44,7 @@ struct IntroView: View {
                         appState.showIntro = false
                     }
                 } label: {
-                    Text("Start AR Experience")
+                    Text("Start Experience")
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding(.horizontal, 40)
